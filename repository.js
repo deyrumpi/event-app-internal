@@ -163,12 +163,12 @@ async function changeLikes(id, increment, db = mariadb) {
 }
 
 async function addLike(id) {
-    console.log("adding like to = " + id);
+    console.log("adding like to ID = " + id);
     return changeLikes(id, true);
 };
 
 async function removeLike(id) {
-    console.log("removing like from = " + id);
+    console.log("removing like from ID = " + id);
     return changeLikes(id, false);
 };
 
